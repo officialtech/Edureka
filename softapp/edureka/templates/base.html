@@ -1,0 +1,492 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/css.css' %}">
+    <title>{% block title %}Emotional Diary{% endblock title %}</title>
+  </head>
+  <body>
+
+    <nav class="navbar nav1 navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand text-white" href="#"><b>Emotional Diary</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse my-2" id="navbarSupportedContent">
+
+            <form class="container">
+                <div class="input-group">
+                <input type="text" class="form-control form-focus" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                <span class="input-group-text" id="basic-addon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </span>
+                </div>
+            </form>
+
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link  text-white" href="#">Corporate Training</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Courses</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+                <a class="line" href="#"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Login</a>
+            </li>
+            <li class="nav-item rounded">
+                <a class="nav-link text-white border-light1" href="#">Signup</a>
+            </li>
+            </ul>  
+        </div>  
+    </nav>
+
+
+<!-- second navbar -->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+        
+
+            <div class="nav-wrap">                            
+                <nav id="mainnav" class="mainnav">
+                    <ul class="menu"> 
+                        <li><a href="work.html"><small class="d-block">Browse</small><span><span>Categories</span></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                              </svg>
+                        </a>
+                            <ul class="submenu">  
+                                <li><a href="#">5G Technology</a>
+                                    <ul class="submenu">  
+                                        <li><a href="#">Learn 5G Technology</a>
+                                        
+                                            <ul class="sub-submenu">  
+                                                <li><a href="#">Learn 5G Technology</a></li>
+                                                <li><a href="#">Learn DevSecOps</a></li>
+                                                <li><a href="#">Learn Tactile VR</a></li>
+                                                <li><a href="#">Neural Networks</a></li>
+                                                <li><a href="#">Encryption</a></li>
+                                                <li><a href="#">Cypher Text</a></li>
+                                                <li><a href="#">Image manuplation</a></li>
+                                                <li><a href="#">Learn Human Augmentation</a></li>
+                                                <li><a href="#">Learn Cybersecurity</a></li>
+                                                <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                                <li><a href="#">Internet</a></li>
+                                            </ul>
+                                        
+                                        </li>
+                                        <li><a href="#">Learn DevSecOps</a></li>
+                                        <li><a href="#">Learn Tactile VR</a></li>
+                                        <li><a href="#">Neural Networks</a></li>
+                                        <li><a href="#">Encryption</a></li>
+                                        <li><a href="#">Cypher Text</a></li>
+                                        <li><a href="#">Image manuplation</a></li>
+                                        <li><a href="#">Learn Human Augmentation</a></li>
+                                        <li><a href="#">Learn Cybersecurity</a></li>
+                                        <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                    </ul>
+                                </li>                         
+                                <li><a href="#">Internet of Behaviours(IoB)</a>
+                                    <ul class="submenu">  
+                                        <li><a href="#">Python</a>
+                                        
+                                            <ul class="sub-submenu">  
+                                                <li><a href="#">Learn 5G Technology</a></li>
+                                                <li><a href="#">Learn DevSecOps</a></li>
+                                                <li><a href="#">Learn Tactile VR</a></li>
+                                                <li><a href="#">Neural Networks</a></li>
+                                                <li><a href="#">Encryption</a></li>
+                                                <li><a href="#">Cypher Text</a></li>
+                                                <li><a href="#">Image manuplation</a></li>
+                                                <li><a href="#">Learn Human Augmentation</a></li>
+                                                <li><a href="#">Learn Cybersecurity</a></li>
+                                                <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                                <li><a href="#">Internet</a></li>
+                                            </ul>
+                                        
+                                        </li>
+                                        <li><a href="#">Neural Networks</a></li>
+                                        <li><a href="#">Encryption</a></li>
+                                        <li><a href="#">Cypher Text</a></li>
+                                        <li><a href="#">Image manuplation</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                        <li><a href="#">Django</a></li>
+                                        <li><a href="#">HTML</a></li>
+                                        <li><a href="#">CSS</a></li>
+                                        <li><a href="#">Slack</a></li>
+                                        <li><a href="#">XSS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">DevSecOps</a>
+                                    <ul class="submenu">  
+                                        <li><a href="#">Hadoop</a>
+                                        
+                                            <ul class="sub-submenu">  
+                                                <li><a href="#">Learn 5G Technology</a></li>
+                                                <li><a href="#">Learn DevSecOps</a></li>
+                                                <li><a href="#">Learn Tactile VR</a></li>
+                                                <li><a href="#">Neural Networks</a></li>
+                                                <li><a href="#">Encryption</a></li>
+                                                <li><a href="#">Cypher Text</a></li>
+                                                <li><a href="#">Image manuplation</a></li>
+                                                <li><a href="#">Learn Human Augmentation</a></li>
+                                                <li><a href="#">Learn Cybersecurity</a></li>
+                                                <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                                <li><a href="#">Internet</a></li>
+                                            </ul>
+                                        
+                                        
+                                        </li>
+                                        <li><a href="#">Neural Networks</a></li>
+                                        <li><a href="#">Encryption</a></li>
+                                        <li><a href="#">Cypher Text</a></li>
+                                        <li><a href="#">Image manuplation</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                        <li><a href="#">Big data</a></li>
+                                        <li><a href="#">Video Encoding and decoding</a></li>
+                                        <li><a href="#">Stack</a></li>
+                                        <li><a href="#">Servers</a></li>
+                                        <li><a href="#">Pandas</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Intelligent Process Automation(IPA)</a>
+                                    <ul class="submenu">  
+                                        <li><a href="#">Learn C</a>
+                                        
+                                            <ul class="sub-submenu">  
+                                                <li><a href="#">Learn 5G Technology</a></li>
+                                                <li><a href="#">Learn DevSecOps</a></li>
+                                                <li><a href="#">Learn Tactile VR</a></li>
+                                                <li><a href="#">Neural Networks</a></li>
+                                                <li><a href="#">Encryption</a></li>
+                                                <li><a href="#">Cypher Text</a></li>
+                                                <li><a href="#">Image manuplation</a></li>
+                                                <li><a href="#">Learn Human Augmentation</a></li>
+                                                <li><a href="#">Learn Cybersecurity</a></li>
+                                                <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                                <li><a href="#">Internet</a></li>
+                                            </ul>
+                                        
+                                        </li>
+                                        <li><a href="#">Machine learning</a></li>
+                                        <li><a href="#">JARVIS</a></li>
+                                        <li><a href="#">Neural Networks</a></li>
+                                        <li><a href="#">Encryption</a></li>
+                                        <li><a href="#">Cypher Text</a></li>
+                                        <li><a href="#">Image manuplation</a></li>
+                                        <li><a href="#">JQUERY</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                        <li><a href="#">Bootstrap</a></li>
+                                        <li><a href="#">Crone Jobs</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Tactile VR</a>
+                                    <ul class="submenu">  
+                                        <li><a href="#">Human Intelligence</a>
+                                        
+                                                                            <ul class="sub-submenu">  
+                                        <li><a href="#">Learn 5G Technology</a></li>
+                                        <li><a href="#">Learn DevSecOps</a></li>
+                                        <li><a href="#">Learn Tactile VR</a></li>
+                                        <li><a href="#">Neural Networks</a></li>
+                                        <li><a href="#">Encryption</a></li>
+                                        <li><a href="#">Cypher Text</a></li>
+                                        <li><a href="#">Image manuplation</a></li>
+                                        <li><a href="#">Learn Human Augmentation</a></li>
+                                        <li><a href="#">Learn Cybersecurity</a></li>
+                                        <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                    </ul>
+                                        
+                                        </li>
+                                        <li><a href="#">Neural Networks</a></li>
+                                        <li><a href="#">Encryption</a></li>
+                                        <li><a href="#">Cypher Text</a></li>
+                                        <li><a href="#">Image manuplation</a></li>
+                                        <li><a href="#">Learn Tactile VR</a></li>
+                                        <li><a href="#">Learn Human Augmentation</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                        <li><a href="#">Learn Cybersecurity</a></li>
+                                        <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                        <li><a href="#">Object Detection</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Big Data Analytics</a>
+                                    <ul class="submenu">  
+                                        <li><a href="#">Learn to Guide</a>
+                                        
+                                                                            <ul class="sub-submenu">  
+                                        <li><a href="#">Learn 5G Technology</a></li>
+                                        <li><a href="#">Learn DevSecOps</a></li>
+                                        <li><a href="#">Learn Tactile VR</a></li>
+                                        <li><a href="#">Neural Networks</a></li>
+                                        <li><a href="#">Encryption</a></li>
+                                        <li><a href="#">Cypher Text</a></li>
+                                        <li><a href="#">Image manuplation</a></li>
+                                        <li><a href="#">Learn Human Augmentation</a></li>
+                                        <li><a href="#">Learn Cybersecurity</a></li>
+                                        <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                    </ul>
+                                        
+                                        </li>
+                                        <li><a href="#">How Robots works</a></li>
+                                        <li><a href="#">Learn Tactile VR</a></li>
+                                        <li><a href="#">Learn Human Augmentation</a></li>
+                                        <li><a href="#">Learn Cybersecurity</a></li>
+                                        <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                        <li><a href="#">Learn Video Object detection</a></li>
+                                        <li><a href="#">Development of REST's</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                        <li><a href="#">Youtube Gallery</a></li>
+                                        <li><a href="#">Slider Objects</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Human Augmentation</a>
+                                    <ul class="submenu">  
+                                        <li><a href="#">Learn to Guide</a>
+                                        
+                                                                            <ul class="sub-submenu">  
+                                        <li><a href="#">Learn 5G Technology</a></li>
+                                        <li><a href="#">Learn DevSecOps</a></li>
+                                        <li><a href="#">Learn Tactile VR</a></li>
+                                        <li><a href="#">Neural Networks</a></li>
+                                        <li><a href="#">Encryption</a></li>
+                                        <li><a href="#">Cypher Text</a></li>
+                                        <li><a href="#">Image manuplation</a></li>
+                                        <li><a href="#">Learn Human Augmentation</a></li>
+                                        <li><a href="#">Learn Cybersecurity</a></li>
+                                        <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                    </ul>
+                                        
+                                        </li>
+                                        <li><a href="#">How to Code</a></li>
+                                        <li><a href="#">Internet of things</a></li>
+                                        <li><a href="#">Learn Tactile VR</a></li>
+                                        <li><a href="#">Learn Human Augmentation</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                        <li><a href="#">Learn Cybersecurity</a></li>
+                                        <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                        <li><a href="#">Development of REST's</a></li>
+                                        <li><a href="#">Data mining</a></li>
+                                        <li><a href="#">Cryptocurrency(Bitcoin)</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Everything-as-a-Service(XaaS)</a>
+                                    <ul class="submenu">  
+                                        <li><a href="#">Learn to Guide</a>
+                                        
+                                                                            <ul class="sub-submenu">  
+                                        <li><a href="#">Learn 5G Technology</a></li>
+                                        <li><a href="#">Learn DevSecOps</a></li>
+                                        <li><a href="#">Learn Tactile VR</a></li>
+                                        <li><a href="#">Neural Networks</a></li>
+                                        <li><a href="#">Encryption</a></li>
+                                        <li><a href="#">Cypher Text</a></li>
+                                        <li><a href="#">Image manuplation</a></li>
+                                        <li><a href="#">Learn Human Augmentation</a></li>
+                                        <li><a href="#">Learn Cybersecurity</a></li>
+                                        <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                    </ul>
+                                        
+                                        </li>
+                                        <li><a href="#">How to Code</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                        <li><a href="#">Learn Video Object detection</a></li>
+                                        <li><a href="#">Learn Tactile VR</a></li>
+                                        <li><a href="#">Learn Human Augmentation</a></li>
+                                        <li><a href="#">Learn Cybersecurity</a></li>
+                                        <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                        <li><a href="#">Development of REST's</a></li>
+                                        <li><a href="#">Data mining</a></li>
+                                        <li><a href="#">Cryptocurrency(Bitcoin)</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Cybersecurity</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Learn Tactile VR</a>
+                                        
+                                                                            <ul class="sub-submenu">  
+                                        <li><a href="#">Learn 5G Technology</a></li>
+                                        <li><a href="#">Learn DevSecOps</a></li>
+                                        <li><a href="#">Learn Tactile VR</a></li>
+                                        <li><a href="#">Neural Networks</a></li>
+                                        <li><a href="#">Encryption</a></li>
+                                        <li><a href="#">Cypher Text</a></li>
+                                        <li><a href="#">Image manuplation</a></li>
+                                        <li><a href="#">Learn Human Augmentation</a></li>
+                                        <li><a href="#">Learn Cybersecurity</a></li>
+                                        <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                    </ul>
+                                        
+                                        </li>
+                                        <li><a href="#">Learn Human Augmentation</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                        <li><a href="#">Learn Cybersecurity</a></li>
+                                        <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                        <li><a href="#">Learn to Guide</a></li>
+                                        <li><a href="#">How to Code</a></li>
+                                        <li><a href="#">Learn Video Object detection</a></li>
+                                        <li><a href="#">Development of REST's</a></li>
+                                        <li><a href="#">Data mining</a></li>
+                                        <li><a href="#">Cryptocurrency(Bitcoin)</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Artificial Intelligence(AI) </a>
+                                    <ul class="submenu">  
+                                        <li><a href="#">Learn to Guide</a>
+                                        
+                                                                            <ul class="sub-submenu">  
+                                        <li><a href="#">Learn 5G Technology</a></li>
+                                        <li><a href="#">Learn DevSecOps</a></li>
+                                        <li><a href="#">Learn Tactile VR</a></li>
+                                        <li><a href="#">Neural Networks</a></li>
+                                        <li><a href="#">Encryption</a></li>
+                                        <li><a href="#">Cypher Text</a></li>
+                                        <li><a href="#">Image manuplation</a></li>
+                                        <li><a href="#">Learn Human Augmentation</a></li>
+                                        <li><a href="#">Learn Cybersecurity</a></li>
+                                        <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                    </ul>
+                                        
+                                        </li>
+                                        <li><a href="#">How to Code</a></li>
+                                        <li><a href="#">Learn Video Object detection</a></li>
+                                        <li><a href="#">Development of REST's</a></li>
+                                        <li><a href="#">Data mining</a></li>
+                                        <li><a href="#">Internet</a></li>
+                                        <li><a href="#">Cryptocurrency(Bitcoin)</a></li>
+                                        <li><a href="#">Learn Tactile VR</a></li>
+                                        <li><a href="#">Learn Human Augmentation</a></li>
+                                        <li><a href="#">Learn Cybersecurity</a></li>
+                                        <li><a href="#">Learn Artificial Intelligence(AI)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul><!-- /.menu -->
+                </nav><!-- /.mainnav -->          
+            </div>
+    
+       
+    <div class="collapse navbar-collapse" id="navbarNavDropdown1">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-3 second-nav">
+          <a class="nav-link"  href="#">Executive Programs</a>
+        </li>
+        <li class="nav-item mx-3 second-nav">
+          <a class="nav-link" href="#">Cloud Computing</a>
+        </li>
+        <li class="nav-item mx-3 second-nav">
+          <a class="nav-link" href="#">DevOps</a>
+        </li>
+        
+        <li class="nav-item mx-3 second-nav">
+          <a class="nav-link" href="#">BI and Visualization</a>
+        </li>
+        
+        <li class="nav-item mx-3 second-nav">
+          <a class="nav-link" href="#">Data Science</a>
+        </li>
+        
+        <li class="nav-item mx-3 second-nav">
+          <a class="nav-link" href="#">Big Data</a>
+        </li>
+        
+        <li class="nav-item mx-3 second-nav">
+          <a class="nav-link" href="#">Project Management and Methodologies</a>
+        </li>
+        
+        <li class="nav-item mx-3 second-nav">
+          <a class="nav-link" href="#">Programming & Frameworks</a>
+        </li>
+        
+        <li class="nav-item mx-3 second-nav">
+          <a class="nav-link" href="#">Software Testing</a>
+        </li>
+
+      </ul>
+      
+
+ 
+
+        <ul class="second-menu">
+
+            <div class="btn-group dropleft">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </a>
+                <div class="dropdown-menu">
+                    <ul class="second-submenu">
+                        <a class="dropdown-item" href="#">DevOps</a>
+                        <a class="dropdown-item" href="#">Data Science</a>
+                        <a class="dropdown-item" href="#">AI</a>
+                        <a class="dropdown-item" href="#">DevOps</a>
+                        <a class="dropdown-item" href="#">Data Science</a>
+                        <a class="dropdown-item" href="#">Digital Marketing</a>
+                        <a class="dropdown-item" href="#">Frontend</a>
+                        <a class="dropdown-item" href="#">Servers</a>
+                        <a class="dropdown-item" href="#">Big Data</a>
+                        <a class="dropdown-item" href="#">AI</a>
+                        <a class="dropdown-item" href="#">DevOps</a>
+                        <a class="dropdown-item" href="#">Hadoop</a>
+                        <a class="dropdown-item" href="#">AI</a>
+                    </ul>
+                </div>
+              </div>
+
+        </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+{% block content %}{% endblock content %}
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

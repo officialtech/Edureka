@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    <style>
+        ul, li{
+            cursor: pointer;
+        }
+        .dropdown-m{
+            display: none;
+        }
+
+        .main-content:hover .dropdown-m{
+            display: block;
+        }
+
+        .father{
+            display: none;
+        }
+
+        .main-content:hover .grand:hover .father{
+            display: block;
+        }
+    </style>
+    <title>EDU.CO</title>
+  </head>
+  <body>
+    
+
+    <div class="container p-5">
+
+        <ul>
+            <li class="main-content">Let's Start
+                <ul class="dropdown-m">
+                    <li class="dropdown-sm grand">Grandfather
+                        <ul class="list-inline father">
+                            <li class="list-inline-item dropdown-sm">Father
+                                <ul class="list-inline-item">
+                                    <li class="list-inline-item">Father Uncle</li>
+                                    <li class="list-inline-item">Father Aunt</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-sm grand">Grand
+                        <ul class="list-inline father">
+                            <li class="list-inline-item dropdown-sm">Father
+                                <ul class="list-inline-item">
+                                    <li class="list-inline-item">Father Uncle</li>
+                                    <li class="list-inline-item">Father Aunt</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-sm grand">GrandMother
+                        <ul class="father">
+                            <li class="dropdown-sm">Father
+                                <ul>
+                                    <li>Father Uncle</li>
+                                    <li>Father Aunt</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
